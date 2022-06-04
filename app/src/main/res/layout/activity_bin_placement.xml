@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification: Putaway"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_marginVertical="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+            <TextView
+                android:id="@+id/dateLabel"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Date" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/dateLabel"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:id="@+id/warehouseLabel"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/dateLabel"
+                android:layout_weight="1"
+                android:text="Warehouse"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="12.5sp"/>
+
+            <TextView
+                android:id="@+id/warehouse"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:layout_below="@+id/date"
+                android:layout_marginStart="17dp"
+                android:layout_toEndOf="@+id/warehouseLabel"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:text="KH6"
+                android:textSize="11sp" />
+            </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/batchNoLabel"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:text="Batch no:"
+                />
+
+            <EditText
+                android:id="@+id/batch"
+                android:cursorVisible="true"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/batchNoLabel"
+                android:background="@drawable/rounded_edit_text_one"
+                android:hint="Batch no"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:text="Mat code"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/batchNoLabel"
+                android:id="@+id/Material_code"
+                />
+
+            <TextView
+                android:id="@+id/Mat_code"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/batch"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/Material_code"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/Material_desc"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/Material_code"
+                android:layout_marginTop="5dp"
+                android:text="Mat decs" />
+
+            <TextView
+                android:id="@+id/Mat_desc"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/Mat_code"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/Material_desc"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:id="@+id/binNumberLabel"
+                android:gravity="center_vertical"
+                android:text="Bin No:"
+                android:layout_below="@+id/Material_desc"
+                android:layout_marginTop="5dp"
+                />
+
+            <EditText
+                android:id="@+id/binNumber"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/Material_desc"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/binNumberLabel"
+                android:background="@drawable/rounded_edit_text_one"
+                android:hint="Bin number"
+                android:inputType="text"
+                android:paddingStart="15dp"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/lscan"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/binNumberLabel"
+                android:layout_marginTop="10dp"
+                android:text="Last Scan" />
+
+            <TextView
+                android:id="@+id/lascan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/binNumber"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_toEndOf="@+id/Material_desc"
+                android:gravity="center_vertical"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/table_data"
+            />
+
+
+    </LinearLayout>
+</ScrollView>

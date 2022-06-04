@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ebm_menu"
+    android:background="@drawable/embscreen3"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Putaway"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_background"
+        android:text="Putaway"
+        android:textColor="@color/white"
+
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Picking"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button_background"
+        android:text="Picking"
+        android:textColor="@color/white"
+
+
+        />
+
+
+</LinearLayout>

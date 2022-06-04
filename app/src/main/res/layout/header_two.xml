@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:background="@color/primary_light"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Batch.No"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+    <!--<TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000066"
+        android:text="Material Code"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000066"
+        android:text="Material Desc"
+        android:gravity="center"
+        />-->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="Qty"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:text="To.No"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        />
+</LinearLayout>
