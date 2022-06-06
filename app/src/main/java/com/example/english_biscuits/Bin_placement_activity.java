@@ -369,7 +369,7 @@ public class Bin_placement_activity extends AppCompatActivity implements FetchDa
     }
 
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
@@ -387,7 +387,7 @@ public class Bin_placement_activity extends AppCompatActivity implements FetchDa
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
     private List<WareHouseRecord> eMptyList(){
         List<WareHouseRecord> wareHouseRecordList = new ArrayList<>();
         wareHouseRecordList.add(new WareHouseRecord("", "", "", 0, 0, "", ""));
